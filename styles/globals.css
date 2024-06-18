@@ -1,0 +1,16 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #efefbb;
+  background: -webkit-linear-gradient(to right, #d4d3dd, #efefbb);
+  background: linear-gradient(to left, #d4d3dd, #efefbb);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Lato", Helvetica Neue, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}

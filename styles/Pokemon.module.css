@@ -1,0 +1,44 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 200px;
+  margin: 20px;
+  /* background-color: aqua; */
+  border-radius: 20px;
+  padding: 10px 0;
+  box-shadow: 0px 0px 6px 6px rgba(3, 3, 3, 0.137);
+}
+.imgFrame {
+  display: flex;
+  width: 150px;
+  height: 170px;
+  border-radius: 50%;
+  background-color: rgba(255, 254, 254, 0.7);
+  box-shadow: 0px 0px 6px 6px rgba(3, 3, 3, 0.137);
+  align-items: center;
+  justify-content: center;
+}
+.image {
+  width: 120px;
+  object-fit: contain;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 1.5em ;
+  text-shadow: 3px 3px 4px rgb(255, 255, 255);
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.type {
+  font-weight: 300;
+  font-size: 14px;
+  font-style: italic;
+}
+ 
+.icon{
+    width: 1em
+}
