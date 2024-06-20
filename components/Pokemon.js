@@ -125,6 +125,7 @@ function Pokemon(props) {
 
   return (
     <div className={styles.card} style={background}>
+      <span className={styles.number}>N°{props.number}</span>
       <h3 className={styles.name}>{title}</h3>
       <div className={styles.imgFrame}>
         <img className={styles.image} src={props.img} alt={props.name}></img>

@@ -10,40 +10,62 @@
 .next {
   font-weight: bold;
   background-color: rgba(255, 255, 255, 0.6);
-  background-image: linear-gradient(135deg, #9990ee, #f5f5af);
-  border-radius: 15%;
+  background-image: linear-gradient(135deg, #dd2c00, #f5f5af);
+  border-radius: 20px;
   width: 80px;
   height: 40px;
   text-align: center;
-  margin: 20px;
+  margin: 10px;
   cursor: pointer;
-  transition-duration: 0.5s;
 }
 .next:hover {
-  background-image: linear-gradient(135deg, #f5f5af, #9990ee);
+  transition-duration: 0.5s;
+  background-image: linear-gradient(135deg, #f5f5af, #dd2c00);
   color: white;
   cursor: pointer;
-  border-color : gray;
+  border-color: gray;
   text-shadow: 1px 1px 2px rgb(0, 0, 0), 3px 3px 4px rgb(0, 0, 0);
 }
 
 .titre {
   letter-spacing: 3px;
   text-shadow: 4px 4px 4px grey;
-  align-items:center;
+  align-items: center;
 }
 
 .pokeBall {
-  width: .9em;
+  width: 0.9em;
   vertical-align: text-bottom;
   box-shadow: 2px 4px 4px gray;
   border-radius: 50%;
-  margin: 0 0 .1em 0
+  margin: 0 0 0.1em 0;
 }
 .pokeBall:hover {
-  width: 2em;
+  width: 1.2em;
   transition-duration: 1s;
-  vertical-align:middle;
+  vertical-align: middle;
+  animation: rotate 0.6s ease-in-out forwards;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(10deg);
+  }
+  25% {
+    transform: rotate(-10deg);
+    margin: 0 15px 30px 15px;
+  }
+  50% {
+    transform: rotate(10deg);
+    margin: 0px 15px;
+  }
+  75% {
+    transform: rotate(-10deg);
+    margin: 0 15px 20px 15px;
+  }
+  100% {
+    transform: rotate(0deg);
+    margin: 0px 3px;
+  }
 }
 
 .pokemonContainer {
@@ -56,4 +78,34 @@
   margin: 20px;
   border-radius: 10px;
   box-shadow: 0px 0px 6px 6px rgba(3, 3, 3, 0.137);
+}
+
+.loading {
+  width: 1.5em;
+  animation: loading 0.6s linear infinite;
+}
+@keyframes loading {
+  0% {
+    transform: translateY(0deg) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-5deg) rotate(180deg);
+  }
+  100% {
+    transform: translateY(-5px) rotate(360deg);
+  }
+}
+
+.loadingText {
+  margin-top: 30px;
+  font-style: italic;
+}
+
+.select {
+  border: 2px solid black;
+  border-radius: 4px;
+}
+.select:focus {
+  border: 2px solid blue;
+  /* box-shadow: 0 0 8px rgba(0, 0, 255, 0.5); */
 }
