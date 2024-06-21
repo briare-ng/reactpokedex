@@ -40,6 +40,23 @@ function Home() {
     }
     return GridBuild(pokemonTable); // construit et retourne un tableau de composants Pokémons
   };
+  //test d'une autre version de l'algo de requêtes : pas de nette amélioration de vitesse
+  // const getPokemonsV2 = async (offsetVal) => {
+  //   const fetchTo = offsetVal + limit;
+  //   console.log(fetchTo);
+  //   const pokemonTable = [];
+  //   for (let i = offsetVal+1; i <= fetchTo; i++) {
+  //     const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${i}`);
+  //     const pokemonFeatures = await response.json();
+  //     pokemonTable.push({
+  //       number: pokemonFeatures.id,
+  //       name: pokemonFeatures.name,
+  //       img: pokemonFeatures.sprites.front_default,
+  //       type: pokemonFeatures.types[0].type.name,
+  //     });
+  //   }
+  //   return GridBuild(pokemonTable);
+  // };
 
   // construction d'un tableau de composants pokemons à partir d'un tableau d'objets
   const GridBuild = (tab) => {
@@ -130,12 +147,12 @@ function Home() {
             Load
           </button>
         )}
-        {isLoading && (
+        {/* {isLoading && ( */}
           <div className={styles.loadingText}>
             Catching them...
             <img className={styles.loading} src="favicon.png"></img>
           </div>
-        )}
+        {/* )} */}
       </main>
     </div>
   );
