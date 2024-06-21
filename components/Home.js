@@ -147,12 +147,12 @@ function Home() {
             Load
           </button>
         )}
-        {/* {isLoading && ( */}
+        {isLoading && (
           <div className={styles.loadingText}>
             Catching them...
             <img className={styles.loading} src="favicon.png"></img>
           </div>
-        {/* )} */}
+        )}
       </main>
     </div>
   );
