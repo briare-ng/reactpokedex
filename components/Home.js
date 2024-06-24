@@ -121,12 +121,12 @@ function Home() {
     <div>
       <main className={styles.main}>
         <h1 className={styles.titre}>
-          P<img className={styles.pokeBall} src="favicon.png"></img>KEDEX
+          P<img className={styles.pokeBall} src="favicon.png" alt="pokeball"></img>KEDEX
         </h1>
         <div className={styles.pokemonContainer}>{pokemonsGrid}</div>
         {!isLoaded && (
           <div>
-            <label htmlFor="loadBy">Charger les pokémons par : </label>
+            <label htmlFor="loadBy">Load pokemons by : </label>
             <select
               id="loadBy"
               value={limit}
